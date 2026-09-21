@@ -1,0 +1,51 @@
+# Environment
+.env
+.venv/
+venv/
+
+# Data directory (SQLite DB, extracted CSVs, etc.)
+data/*
+!data/bronze/
+data/bronze/*
+!data/bronze/receita/
+data/bronze/receita/*
+!data/bronze/receita/cnae_alimenticio.csv
+!data/bronze/receita/naturezas_nao_empresas.csv
+!data/gold/
+data/gold/*
+!data/gold/metadata.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage
+*.coverage
+
+# Logs
+*.log
+
+# uv
+.python-version
+
+# Coding agent
+memory-bank/*
